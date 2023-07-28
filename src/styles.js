@@ -1,12 +1,3 @@
-// :root {
-//   --white: #fff;
-//   --black: #000;
-//   /* --bgColor: rgb(147, 147, 242); */
-//   --bgColor: #8c70ff;
-//   --purple: #c78eff;
-//   --purpled: #6753ff;
-//   --yellow: yellow;
-// }
 
 // import styled, {createGlobalStyle} from 'styled-components'
 
@@ -39,6 +30,7 @@ export const Container = styled.div`
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    
 `
 
 export const Button = styled.button`
@@ -58,7 +50,24 @@ export const Button = styled.button`
     padding: 12px 80px;
     transition: all 0.3s ease-in;
     margin: 10px auto;
-    width: 100%
+    width: 100%;
+   
+    @media (max-width:400px ) {
+        margin: 5px auto;
+        font-size: 10px;
+    }
+`
+
+export const H1 = styled.h1`
+font-size: 2em;
+font-weight: bold;
+margin:20px auto;
+text-align: center;
+
+@media (max-width:400px ) {
+       font-size: 1.5em;
+       margin: 10px auto;
+    }
 `
 
 export const H2 = styled.h2`

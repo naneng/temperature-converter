@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -31,18 +37,28 @@ select {
   background: transparent;
   border: none;
   outline: none;
-  border: 1px solid #6952b6;
+  /* border: 1px solid #6952b6; */
+  border: 1px solid #A65F68;
   padding: 8px;
   margin: 15px;
+  font-weight: 700;
   border-radius: 16px;
   font-size: 14px;
   color: #A65F68;
   text-align: center;
+  animation: blinker 2s linear infinite;
+
+  @media (max-width:400px ) {
+        width: 100px;
+    }
 }
+
+
 
 input:focus {
   border: 1px solid #fff;
   color: #fff;
+  animation: none;
 }
 
 .copyright {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { GlobalStyle } from "./styles"
 // import Container from "./components/Container"
 import './App.css';
-import { Container, Button, H2, H3, Results} from "./styles";
+import { Container, Button, H1, H2, H3, Results} from "./styles";
 
 const App = () => {
   
@@ -31,12 +31,12 @@ const App = () => {
         <>
             
             <Container>
-                <h1 class="title">Temperature Converter</h1>
+                <H1>Temperature Converter</H1>
                 <form onSubmit={convert}>
-                    <div>
+                    <Results>
                         <label>Degrees in Celsius</label>
                         <input value={celsius} onChange={(e) => setCelsius(e.target.value)} />
-                    </div>
+                    </Results>
                     <Button type="submit">convert to fahrenheit</Button>
                 </form>
                 <Results>
