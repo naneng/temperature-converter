@@ -19,17 +19,16 @@ const App = () => {
     }
 
     function Copyright() {
-  return (
-    <p className="copyright">
-      Copyrights 2023 Katrina Ariola. All rights reserved.
-    </p>
-  );
-}
+        return (
+            <p className="copyright">
+            Copyrights 2023 Katrina Ariola. All rights reserved.
+            </p>
+        );
+    }
 
     
     return (
         <>
-            
             <Container>
                 <H1>Temperature Converter</H1>
                 <form onSubmit={convert}>
@@ -40,17 +39,16 @@ const App = () => {
                     <Button type="submit">convert to fahrenheit</Button>
                 </form>
                 <Results>
+                    <Results>
+                        <H2>{celsius}</H2>
+                        <H3>Celsius</H3>
+                    </Results>
+                    <H2>is</H2>
+                    <Results>
+                        <H2>{fahrenheit} </H2>
+                        <H3>Fahrenheit</H3>
+                    </Results>
 
-                <Results>
-                    <H2>{celsius}</H2>
-                    <H3>Celsius</H3>
-                </Results>
-                <H2>is</H2>
-                <Results>
-                  
-                    <H2>{fahrenheit} </H2>
-                    <H3>Fahrenheit</H3>
-                </Results>
                 </Results>
 
             </Container>
